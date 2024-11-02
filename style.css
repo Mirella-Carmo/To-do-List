@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+body img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.conteudo {
+    margin: 0 auto;
+    width: 100%;
+    background-color: rgba(94, 94, 94, 0.111);
+    backdrop-filter: blur(8px);
+    max-width: 450px;
+    padding: 55px;
+    border-radius: 12px;
+    position: absolute;
+    margin-top: -200px;
+    border: 1px solid rgba(255, 255, 255, 0.452);
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.topo input {
+    width: 350px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #0586e2;
+    outline: none; /*tirar a marcação da borda*/
+    font-size: 1.2rem;
+    background: #ffffff;
+    color: #0586e2;
+}
+
+.topo input::placeholder{
+    color: #04303b;
+}
+
+.topo button {
+    width: 45px;
+    border-radius: 12px;
+    border: 1px solid #0586e2;
+    background: #ffffff;
+    outline: none;
+}
+
+.topo button:hover{
+    background-color: #21a5f0;
+    color: white;
+    cursor: pointer;
+}
+
+#listaTarefas {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#listaTarefas li {
+    padding: 20px;
+    background: rgb(0, 131, 212);
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-top: 25px;
+}
+
+.btnAcao, .btnExcluir {
+    border-radius: 25px;
+    border: 1px solid #05d3e2;
+    height: 38px;
+    width: 38px;
+    margin-right: 8px;
+    cursor: pointer;
+    background: #05d3e2;
+    color: white;
+}
+
+.btnAcao:hover, .btnExcluir:hover {
+    background: #01ffcc
+}
